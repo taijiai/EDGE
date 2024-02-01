@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  edge:
+    build: .
+    volumes:
+      - ./:/app
+    stop_signal: SIGKILL
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids: [ '0', '1' ]
+              capabilities: [ compute, utility ]
+    environment:
+      - TZ=America/Los_Angeles
