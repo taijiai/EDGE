@@ -1,0 +1,11 @@
+torchtorchvision
+torchaudio
+wandb
+matplotlib
+einops
+p_tqdm
+youtube-dl
+gdown
+accelerate
+jukemirlib @ git+https://github.com/rodrigo-castellon/jukemirlib.git
+pytorch3d @ git+https://github.com/facebookresearch/pytorch3d.git
